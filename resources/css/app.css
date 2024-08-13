@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*faculty and student form section*/
+.td-padding{
+    @apply p-4;
+}
+.border-bottom{
+    @apply border-b;
+}
+
+.border-right{
+    @apply border-r;
+}
+
+.e-select{
+    @apply py-3 px-2 border-2 border-slate-300 mb-5;
+}
+
+.e-form-div{
+@apply w-96 pl-10;
+}
+
+.e-form{
+    @apply border-2 p-5;
+}
+
+.e-form-input{
+    @apply w-full focus:outline-none focus:border-b-2 mb-5;
+}
+
+.e-form-input-button{
+    @apply bg-slate-800 px-5 py-2 text-white mb-5 ;
+}
+
+/*faculty and student select section*/
