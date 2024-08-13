@@ -17,3 +17,4 @@ Route::post('/stdstore', [StudentController::class, 'store'])->name('student.sto
 Route::get('{sttoken}/select-faculty', [StudentController::class, 'FacultySelect'])->name('student.select');
 Route::resource('student', StudentController::class);
 Route::delete('{id}/delete',[StudentController::class, 'DeleteStudent'])->name('student.delete');
+

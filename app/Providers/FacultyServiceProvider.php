@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Providers;
-
 use App\Http\Service\FacultyServices\AdvanceListFacultyService;
 use App\Http\Service\FacultyServices\RedirectFacultyService;
 use App\Http\Service\FacultyServices\StoreFacultyService;

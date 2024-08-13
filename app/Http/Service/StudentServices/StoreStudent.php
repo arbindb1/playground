@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Service\StudentServices;
-
 use App\Http\Service\ServicesInterface\StoreStudentInterface;
 use App\Models\Faculty;
 use App\Models\Student;

@@ -21,7 +21,6 @@ class RepoServiceProvider extends ServiceProvider
      * Bootstrap services.
      */
     public function boot(): void
-
     {
         //
     }
