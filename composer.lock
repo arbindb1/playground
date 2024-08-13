@@ -3113,7 +3113,6 @@
             "time": "2024-04-27T21:32:50+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "spatie/data-transfer-object",
             "version": "3.9.1",
             "source": {
@@ -3178,8 +3177,6 @@
             "time": "2022-09-16T13:34:38+00:00"
         },
         {
-=======
->>>>>>> d0beb09e60fd3f4c399b674deace7772c4c36607
             "name": "symfony/clock",
             "version": "v7.1.1",
             "source": {
