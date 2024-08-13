@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 use App\Http\Service\FacultyServices\AdvanceListFacultyService;
+use App\Http\Service\FacultyServices\DeleteFacultyService;
 use App\Http\Service\FacultyServices\RedirectFacultyService;
 use App\Http\Service\FacultyServices\StoreFacultyService;
+use App\Http\Service\ServicesInterface\DeleteFacultyServiceInterface;
 use App\Http\Service\ServicesInterface\ListFacultyServiceInterface;
 use App\Http\Service\ServicesInterface\RedirectFacultyServiceInterface;
 use App\Http\Service\ServicesInterface\StoreFacultyServiceInterface;
@@ -19,6 +21,7 @@ class FacultyServiceProvider extends ServiceProvider
         $this->app->bind(ListFacultyServiceInterface::class,AdvanceListFacultyService::class);
         $this->app->bind(RedirectFacultyServiceInterface::class,RedirectFacultyService::class);
         $this->app->bind(StoreFacultyServiceInterface::class,StoreFacultyService::class);
+        $this->app->bind(DeleteFacultyServiceInterface::class,DeleteFacultyService::class);
     }
 
 

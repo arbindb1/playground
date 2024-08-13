@@ -9,6 +9,13 @@
                 <tr class="border-bottom">
                     <td class="td-padding border-right">{{ $dat->id }}</td>
                     <td class="td-padding border-right">{{ $dat->name }}</td>
+                    <td class="td-padding border-right">
+                        <form action="{{ route('faculty.delete',['id' => $dat->id]) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <input type="submit" value="delete">
+                        </form>
+                    </td>
                 </tr>
             @empty
                 <p>No data found</p>

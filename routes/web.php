@@ -16,5 +16,6 @@ Route::get('/{sttoken}/studentList', [StudentController::class, 'studentRedirect
 Route::post('/stdstore', [StudentController::class, 'store'])->name('student.store');
 Route::get('{sttoken}/select-faculty', [StudentController::class, 'FacultySelect'])->name('student.select');
 Route::resource('student', StudentController::class);
-Route::delete('{id}/delete',[StudentController::class, 'DeleteStudent'])->name('student.delete');
+Route::delete('{id}/deleteStudent',[StudentController::class, 'DeleteStudent'])->name('student.delete');
+Route::delete('{id}/deleteFaculty',[FacultyController::class, 'DeleteFaculty'])->name('faculty.delete');
 

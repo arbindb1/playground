@@ -7,6 +7,7 @@ use App\Models\Student;
 class DeleteStudentService implements DeleteStudentServiceInterface{
 
     public function DeleteStudent($id){
-        Student::destroy($id);
+        $student = Student::find($id);
+        $student->delete();
     }
 }

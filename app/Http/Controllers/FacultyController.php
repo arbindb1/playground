@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\DTO\FacultyDTO;
 use Illuminate\Http\Request;
 use App\Http\Requests\FacultyStoreRequest;
+use App\Http\Service\ServicesInterface\DeleteFacultyServiceInterface;
 use App\Http\Service\ServicesInterface\ListFacultyServiceInterface;
 use App\Http\Service\ServicesInterface\StoreFacultyServiceInterface;
 use App\Http\Service\ServicesInterface\RedirectFacultyServiceInterface;
@@ -16,7 +17,8 @@ class FacultyController extends Controller
     public function __construct(
         protected ListFacultyServiceInterface $listFacultyService,
         protected RedirectFacultyServiceInterface $redirectFacultyService,
-        protected StoreFacultyServiceInterface $storeFacultyService
+        protected StoreFacultyServiceInterface $storeFacultyService,
+        protected DeleteFacultyServiceInterface $deleteFacultyService
     ) {
     }
     public function homepage()
@@ -41,5 +43,9 @@ class FacultyController extends Controller
         $facultyDTO= new FacultyDTO($validate);
         $this->storeFacultyService->storeFaculty($facultyDTO);
         return redirect()->route('faculty.list', ['token' => 'facultyList']);
+    }
+    public function DeleteFaculty($id){
+        $this->deleteFacultyService->deleteFaculty($id);
+        return redirect()->route('faculty.list',['token'=>'facultyList']);
     }
 }
