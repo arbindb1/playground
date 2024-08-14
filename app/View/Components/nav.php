@@ -14,13 +14,15 @@ class nav extends Component
     public $homeroute;
     public $sdroute;
     public $stroute;
+    public $trash;
 
 
-    public function __construct($homeroute,$sdroute,$stroute)
+    public function __construct($homeroute,$sdroute,$stroute,$trash)
     {
         $this->homeroute = $homeroute;
         $this->sdroute = $sdroute;
         $this->stroute = $stroute;
+        $this->trash = $trash;
     }
 
     /**

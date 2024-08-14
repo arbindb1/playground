@@ -2,4 +2,5 @@
     <a class="flex-1" href="{{ $homeroute }}">Home</a>
     <a class="flex-1" href="{{ $sdroute }}">Faculty Details</a>
     <a class="flex-1" href="{{ $stroute }}">Student Details</a>
+    <a class="flex-1" href="{{ $trash }}">Trash</a>
 </div>

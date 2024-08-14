@@ -5,6 +5,7 @@ use App\Http\Controllers\userController;
 use App\Http\Controllers\UsrController;
 use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\TrashController;
 
 Route::get('/', [FacultyController::class, 'homepage'])->name('faculty.homepage');
 Route::get('/{token}/facultyList', [FacultyController::class, 'listRedirect'])->name('faculty.list');
@@ -18,4 +19,5 @@ Route::get('{sttoken}/select-faculty', [StudentController::class, 'FacultySelect
 Route::resource('student', StudentController::class);
 Route::delete('{id}/deleteStudent',[StudentController::class, 'DeleteStudent'])->name('student.delete');
 Route::delete('{id}/deleteFaculty',[FacultyController::class, 'DeleteFaculty'])->name('faculty.delete');
-
+Route::get('/trash',[TrashController::class, 'trash'])->name('trash');
+Route::delete('{id}/{type}/deleteTrash',[TrashController::class,'deleteTrash'])->name('trash.delete');
