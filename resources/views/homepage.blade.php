@@ -11,7 +11,9 @@
 </head>
 
 <body>
+
     <x-nav :homeroute="route('faculty.homepage')" :sdroute="route('faculty.list', ['token' => 'facultyList'])" :stroute="route('student.list', ['sttoken' => 'studentList'])" :trash="route('trash')" />
+        <div class="content">
     <div class="flex">
         <p class="flex-1">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora cupiditate in, facere voluptates,
@@ -89,6 +91,7 @@
             pariatur.
         </p>
     </div>
+</div>
 </body>
 
 </html>

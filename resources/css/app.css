@@ -22,6 +22,9 @@
 .e-form-div {
     @apply w-96 pl-10;
 }
+.content{
+    @apply bg-gray-50;
+}
 
 .e-form {
     @apply border-2 p-5;
@@ -35,4 +38,15 @@
     @apply bg-slate-800 px-5 py-2 text-white mb-5;
 }
 
+.e-button-delete{
+ @apply bg-red-400 text-white p-2 w-32 cursor-pointer font-bold;
+}
+
+.e-button-restore{
+    @apply bg-lime-400 text-white p-2 cursor-pointer font-bold;
+}
 /*faculty and student select section*/
+body{
+    margin:0;
+    padding:0;
+}

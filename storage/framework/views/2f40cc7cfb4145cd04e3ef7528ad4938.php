@@ -37,6 +37,8 @@
 <?php $component = $__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e; ?>
 <?php unset($__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e); ?>
 <?php endif; ?>
+    <div class="content h-screen w-screen">
+
     <?php if (isset($component)) { $__componentOriginalefad8b7a85e93dc67c3680526e3a8bb8 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalefad8b7a85e93dc67c3680526e3a8bb8 = $attributes; } ?>
 <?php $component = App\View\Components\FacultyButton::resolve(['id' => 'addFaculty','route' => route('faculty.list', ['token' => 'facultyAdd'])] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -147,6 +149,7 @@
 <?php $component = $__componentOriginalf121bd15db2f0e51dedaf10ab8562730; ?>
 <?php unset($__componentOriginalf121bd15db2f0e51dedaf10ab8562730); ?>
 <?php endif; ?>
+</div>
 </body>
 <script>
     let list = document.getElementById('facultyList');
@@ -162,6 +165,7 @@
     document.getElementById('cityFilter').addEventListener('change', function() {
         this.form.submit();
     });
+
 </script>
 
 </html>

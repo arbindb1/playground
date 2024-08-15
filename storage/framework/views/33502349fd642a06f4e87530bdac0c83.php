@@ -30,6 +30,7 @@
 <?php $component = $__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e; ?>
 <?php unset($__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e); ?>
 <?php endif; ?>
+        <div class="content">
     <?php if (isset($component)) { $__componentOriginala49eceb8cd3df1ac6439a546b5a7e340 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginala49eceb8cd3df1ac6439a546b5a7e340 = $attributes; } ?>
 <?php $component = App\View\Components\TrashTable::resolve(['trash' => $trash] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -50,6 +51,7 @@
 <?php $component = $__componentOriginala49eceb8cd3df1ac6439a546b5a7e340; ?>
 <?php unset($__componentOriginala49eceb8cd3df1ac6439a546b5a7e340); ?>
 <?php endif; ?>
+        </div>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
     <?php echo app('Illuminate\Foundation\Vite')('resources/css/app.css'); ?>
 </head>
 <body>
+
     <?php if (isset($component)) { $__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3d4e3f5369e04c2cf115b9f764b9480e = $attributes; } ?>
 <?php $component = App\View\Components\Nav::resolve(['homeroute' => route('faculty.homepage'),'sdroute' => route('faculty.list',['token' => 'facultyList']),'stroute' => route('student.list',['sttoken' => 'studentList']),'trash' => route('trash')] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -28,6 +29,7 @@
 <?php $component = $__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e; ?>
 <?php unset($__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e); ?>
 <?php endif; ?>
+        <div class="content">
         <?php if (isset($component)) { $__componentOriginalefad8b7a85e93dc67c3680526e3a8bb8 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalefad8b7a85e93dc67c3680526e3a8bb8 = $attributes; } ?>
 <?php $component = App\View\Components\FacultyButton::resolve(['id' => 'addStudent','route' => route('student.select', ['sttoken' => 'studentAdd'])] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -119,6 +121,7 @@
 <?php endif; ?>
         <?php else: ?>
         <?php endif; ?>
+    </div>
 </body>
 <script>
 

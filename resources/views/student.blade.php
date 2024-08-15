@@ -8,7 +8,9 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+
     <x-nav :homeroute="route('faculty.homepage')" :sdroute="route('faculty.list',['token' => 'facultyList'])" :stroute="route('student.list',['sttoken' => 'studentList'])" :trash="route('trash')" />
+        <div class="content">
         <x-faculty-button id="addStudent" :route="route('student.select', ['sttoken' => 'studentAdd'])">
             Add Student
         </x-faculty-button>
@@ -30,6 +32,7 @@
         <x-student-table id="studentList" :studentlist="$studentList" />
         @else
         @endif
+    </div>
 </body>
 <script>
 

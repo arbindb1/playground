@@ -18,6 +18,8 @@
 
 <body>
     <x-nav :homeroute="route('faculty.homepage')" :sdroute="route('faculty.list', ['token' => 'facultyList'])" :stroute="route('student.list', ['sttoken' => 'studentList'])" :trash="route('trash')" />
+    <div class="content h-screen w-screen">
+
     <x-faculty-button id="addFaculty" :route="route('faculty.list', ['token' => 'facultyAdd'])">
         Add Faculty
     </x-faculty-button>
@@ -35,6 +37,7 @@
         </form>
     @endif
     <x-faculty-table id="facultyList" class="hidden" :facultyData="$facultyData" />
+</div>
 </body>
 <script>
     let list = document.getElementById('facultyList');
@@ -50,6 +53,7 @@
     document.getElementById('cityFilter').addEventListener('change', function() {
         this.form.submit();
     });
+
 </script>
 
 </html>

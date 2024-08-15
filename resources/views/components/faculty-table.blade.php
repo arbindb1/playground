@@ -4,16 +4,17 @@
         <tr class="border-bottom">
             <th class=" td-padding border-right">id</th>
             <th class=" td-padding border-right">Faculty</th>
+            <th class=" td-padding border-right">Action</th>
         </tr>
         @forelse($facultyData as $dat)
             <tr class="border-bottom">
                 <td class="td-padding border-right">{{ $dat->id }}</td>
                 <td class="td-padding border-right">{{ $dat->name }}</td>
                 <td class="td-padding border-right">
-                    <form action="{{ route('faculty.delete', ['id' => $dat->id]) }}" method="POST">
+                    <form  action="{{ route('faculty.delete', ['id' => $dat->id]) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <input type="submit" value="delete">
+                        <input class="e-button-delete" type="submit" value="Delete">
                     </form>
                 </td>
             </tr>

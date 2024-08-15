@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <?php if (isset($component)) { $__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal3d4e3f5369e04c2cf115b9f764b9480e = $attributes; } ?>
 <?php $component = App\View\Components\Nav::resolve(['homeroute' => route('faculty.homepage'),'sdroute' => route('faculty.list', ['token' => 'facultyList']),'stroute' => route('student.list', ['sttoken' => 'studentList']),'trash' => route('trash')] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
@@ -31,6 +32,7 @@
 <?php $component = $__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e; ?>
 <?php unset($__componentOriginal3d4e3f5369e04c2cf115b9f764b9480e); ?>
 <?php endif; ?>
+        <div class="content">
     <div class="flex">
         <p class="flex-1">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora cupiditate in, facere voluptates,
@@ -108,6 +110,7 @@
             pariatur.
         </p>
     </div>
+</div>
 </body>
 
 </html>

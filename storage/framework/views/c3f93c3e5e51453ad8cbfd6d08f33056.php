@@ -4,16 +4,17 @@
         <tr class="border-bottom">
             <th class=" td-padding border-right">id</th>
             <th class=" td-padding border-right">Faculty</th>
+            <th class=" td-padding border-right">Action</th>
         </tr>
         <?php $__empty_1 = true; $__currentLoopData = $facultyData; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
             <tr class="border-bottom">
                 <td class="td-padding border-right"><?php echo e($dat->id); ?></td>
                 <td class="td-padding border-right"><?php echo e($dat->name); ?></td>
                 <td class="td-padding border-right">
-                    <form action="<?php echo e(route('faculty.delete', ['id' => $dat->id])); ?>" method="POST">
+                    <form  action="<?php echo e(route('faculty.delete', ['id' => $dat->id])); ?>" method="POST">
                         <?php echo csrf_field(); ?>
                         <?php echo method_field('DELETE'); ?>
-                        <input type="submit" value="delete">
+                        <input class="e-button-delete" type="submit" value="Delete">
                     </form>
                 </td>
             </tr>

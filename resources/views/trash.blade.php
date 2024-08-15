@@ -11,7 +11,9 @@
 
 <body>
     <x-nav :homeroute="route('faculty.homepage')" :sdroute="route('faculty.list', ['token' => 'facultyList'])" :stroute="route('student.list', ['sttoken' => 'studentList'])" :trash="route('trash')" />
+        <div class="content">
     <x-trash-table :trash="$trash" />
+        </div>
 </body>
 
 </html>

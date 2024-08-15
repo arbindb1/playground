@@ -17,3 +17,4 @@ Route::resource('student', StudentController::class);
 Route::delete('{id}/deleteStudent', [StudentController::class, 'DeleteStudent'])->name('student.delete');
 Route::get('/trash', [TrashController::class, 'trash'])->name('trash');
 Route::delete('{id}/{type}/deleteTrash', [TrashController::class, 'deleteTrash'])->name('trash.delete');
+Route::post('{id}/{type}/restoreTrash',[TrashController::class, 'restoreTrash'])->name('trash.restore');
