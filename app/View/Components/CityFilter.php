@@ -14,7 +14,7 @@ class CityFilter extends Component
     public $id;
     public $filterData;
     public $listAll;
-    public function __construct($id,$filterData,$listAll)
+    public function __construct($id, $filterData, $listAll)
     {
         $this->id = $id;
         $this->filterData = $filterData;

@@ -15,8 +15,8 @@ class TrashServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(TrashListServiceInterface::class,TrashListService::class);
-        $this->app->bind(TrashDeleteServiceInterface::class,TrashDeleteService::class);
+        $this->app->bind(TrashListServiceInterface::class, TrashListService::class);
+        $this->app->bind(TrashDeleteServiceInterface::class, TrashDeleteService::class);
     }
 
     /**

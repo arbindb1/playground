@@ -1,12 +1,15 @@
 <?php
+
 namespace App\Http\Service\FacultyServices;
 
 use App\Http\Service\ServicesInterface\DeleteFacultyServiceInterface;
 use App\Models\Faculty;
 use App\Models\Student;
 
-class DeleteFacultyService implements DeleteFacultyServiceInterface{
-    public function deleteFaculty($rawData){
+class DeleteFacultyService implements DeleteFacultyServiceInterface
+{
+    public function deleteFaculty($rawData)
+    {
         $studentsWithFaculty = Student::where('faculty', $rawData)->exists();
 
         if ($studentsWithFaculty) {

@@ -1,6 +1,8 @@
 <?php
+
 namespace App\http\Service\ServicesInterface;
 
-interface StoreFacultyServiceInterface{
+interface StoreFacultyServiceInterface
+{
     public function storeFaculty($request);
 }

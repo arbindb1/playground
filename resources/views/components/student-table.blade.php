@@ -1,5 +1,3 @@
-
-
 <div id="{{ $id }}" class="p-4">
     <table class="border-2 w-8/12">
         <tr class="border-bottom">
@@ -11,9 +9,9 @@
             <tr class="border-bottom">
                 <td class="td-padding border-right">{{ $dat->id }}</td>
                 <td class="td-padding border-right">{{ $dat->name }}</td>
-                <td class="td-padding border-right">{{ $dat->fc->name?? 'Not found' }}</td>
+                <td class="td-padding border-right">{{ $dat->fc->name ?? 'Not found' }}</td>
                 <td class="td-padding border-right">
-                    <form action="{{ route('student.delete',['id' => $dat->id]) }}" method="POST">
+                    <form action="{{ route('student.delete', ['id' => $dat->id]) }}" method="POST">
                         @csrf
                         @method('DELETE')
                         <input type="submit" value="delete">
@@ -28,4 +26,3 @@
 
     </table>
 </div>
-

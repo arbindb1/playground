@@ -17,7 +17,7 @@ class nav extends Component
     public $trash;
 
 
-    public function __construct($homeroute,$sdroute,$stroute,$trash)
+    public function __construct($homeroute, $sdroute, $stroute, $trash)
     {
         $this->homeroute = $homeroute;
         $this->sdroute = $sdroute;

@@ -16,8 +16,9 @@ class Student extends Model
         'faculty'
     ];
     protected $dates = ['deleted_at'];
-    protected $table ="students";
-    public function fc(){
+    protected $table = "students";
+    public function fc()
+    {
         return $this->belongsTo(Faculty::class, 'faculty');
     }
 }

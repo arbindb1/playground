@@ -15,7 +15,7 @@ class FacultyTable extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($id,$class,$facultyData)
+    public function __construct($id, $class, $facultyData)
     {
         $this->id = $id;
         $this->class = $class;

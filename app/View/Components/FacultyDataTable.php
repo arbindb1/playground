@@ -14,8 +14,7 @@ class FacultyDataTable extends Component
      */
     public function __construct(
         $faculties
-    )
-    {
+    ) {
         $this->faculties = $faculties;
     }
 

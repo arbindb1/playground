@@ -19,10 +19,10 @@ class StudentServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(RedirectStudentServiceInterface::class,RedirectStudentService::class);
-        $this->app->bind(StoreStudentInterface::class,StoreStudent::class);
-        $this->app->bind(StudentFSelectInterface::class,StudentFSelect::class);
-        $this->app->bind(DeleteStudentServiceInterface::class,DeleteStudentService::class);
+        $this->app->bind(RedirectStudentServiceInterface::class, RedirectStudentService::class);
+        $this->app->bind(StoreStudentInterface::class, StoreStudent::class);
+        $this->app->bind(StudentFSelectInterface::class, StudentFSelect::class);
+        $this->app->bind(DeleteStudentServiceInterface::class, DeleteStudentService::class);
     }
 
     /**

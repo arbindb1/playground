@@ -13,7 +13,7 @@ class FacultyButton extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($id,$route)
+    public function __construct($id, $route)
     {
         $this->id = $id;
         $this->route = $route;

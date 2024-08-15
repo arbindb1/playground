@@ -2,9 +2,8 @@
 
 namespace App\Http\Service\ServicesInterface;
 
-interface ListFacultyServiceInterface{
+interface ListFacultyServiceInterface
+{
 
     public function getFacultyList();
-
-
 }

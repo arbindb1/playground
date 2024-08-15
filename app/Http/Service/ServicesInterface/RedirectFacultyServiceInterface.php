@@ -1,8 +1,10 @@
 <?php
+
 namespace App\Http\Service\ServicesInterface;
 
 
-interface RedirectFacultyServiceInterface{
+interface RedirectFacultyServiceInterface
+{
     public function getFilterData($request);
     public function getFacultyData();
 }

@@ -15,7 +15,7 @@ class FacultyForm extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($route,$value,$class,$id)
+    public function __construct($route, $value, $class, $id)
     {
         $this->route = $route;
         $this->value = $value;

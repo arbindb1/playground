@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\DTO\StudentDTO;
 use App\Http\Requests\StudentStoreRequest;
 use App\Http\Service\ServicesInterface\DeleteStudentServiceInterface;
@@ -17,8 +18,7 @@ class StudentController extends Controller
         protected RedirectStudentServiceInterface $studentListService,
         protected StoreStudentInterface $studentStoreService,
         protected DeleteStudentServiceInterface $deleteStudentService
-    ) {
-    }
+    ) {}
     public function FacultySelect($sttoken)
     {
         $facultyList = $this->facultyListService->getFacultyList();
@@ -35,8 +35,9 @@ class StudentController extends Controller
         $this->studentStoreService->storeStudent($studentDTO);
         return redirect()->route('student.list', ['sttoken' => 'studentList']);
     }
-    public function DeleteStudent($id){
+    public function DeleteStudent($id)
+    {
         $this->deleteStudentService->deleteStudent($id);
-        return redirect()->route('student.list',['sttoken'=>'studentList']);
+        return redirect()->route('student.list', ['sttoken' => 'studentList']);
     }
 }

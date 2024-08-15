@@ -13,8 +13,7 @@ class RepoServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(ListFacultyServiceInterface::class,ListFacultyService::class);
-
+        $this->app->bind(ListFacultyServiceInterface::class, ListFacultyService::class);
     }
 
     /**

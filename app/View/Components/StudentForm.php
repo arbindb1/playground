@@ -15,7 +15,7 @@ class StudentForm extends Component
     public $route;
     public $facultylist;
     public $value;
-    public function __construct($id,$route,$facultylist,$value)
+    public function __construct($id, $route, $facultylist, $value)
     {
         $this->id = $id;
         $this->route = $route;

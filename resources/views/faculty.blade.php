@@ -27,12 +27,12 @@
     </x-faculty-button>
 
     <x-faculty-form id="facultyAdd" class="hidden" :route="route('faculty.store')" value="add" id="facultyAdd" class="hidden" />
-    @if($token == "facultyList")
-    <form method="GET" action={{ route('faculty.list', ['token' => 'facultyList']) }}>
-        @csrf
-        @method('GET')
-        <x-city-filter id="cityFilter" :listAll="$listAll" :filterData="$filterData" />
-    </form>
+    @if ($token == 'facultyList')
+        <form method="GET" action={{ route('faculty.list', ['token' => 'facultyList']) }}>
+            @csrf
+            @method('GET')
+            <x-city-filter id="cityFilter" :listAll="$listAll" :filterData="$filterData" />
+        </form>
     @endif
     <x-faculty-table id="facultyList" class="hidden" :facultyData="$facultyData" />
 </body>

@@ -101,11 +101,11 @@
 <?php $component = $__componentOriginal11d80ca5e8d2a6a29a9aa3739aac5b97; ?>
 <?php unset($__componentOriginal11d80ca5e8d2a6a29a9aa3739aac5b97); ?>
 <?php endif; ?>
-    <?php if($token == "facultyList"): ?>
-    <form method="GET" action=<?php echo e(route('faculty.list', ['token' => 'facultyList'])); ?>>
-        <?php echo csrf_field(); ?>
-        <?php echo method_field('GET'); ?>
-        <?php if (isset($component)) { $__componentOriginal62aba7d5152c6750dfbca37ea8a0ae3c = $component; } ?>
+    <?php if($token == 'facultyList'): ?>
+        <form method="GET" action=<?php echo e(route('faculty.list', ['token' => 'facultyList'])); ?>>
+            <?php echo csrf_field(); ?>
+            <?php echo method_field('GET'); ?>
+            <?php if (isset($component)) { $__componentOriginal62aba7d5152c6750dfbca37ea8a0ae3c = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal62aba7d5152c6750dfbca37ea8a0ae3c = $attributes; } ?>
 <?php $component = App\View\Components\CityFilter::resolve(['id' => 'cityFilter','listAll' => $listAll,'filterData' => $filterData] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
 <?php $component->withName('city-filter'); ?>
@@ -125,7 +125,7 @@
 <?php $component = $__componentOriginal62aba7d5152c6750dfbca37ea8a0ae3c; ?>
 <?php unset($__componentOriginal62aba7d5152c6750dfbca37ea8a0ae3c); ?>
 <?php endif; ?>
-    </form>
+        </form>
     <?php endif; ?>
     <?php if (isset($component)) { $__componentOriginalf121bd15db2f0e51dedaf10ab8562730 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalf121bd15db2f0e51dedaf10ab8562730 = $attributes; } ?>

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Service\FacultyServices;
+
 use App\Http\Service\ServicesInterface\RedirectFacultyServiceInterface;
 
 use App\Models\Faculty;
@@ -25,7 +26,6 @@ class RedirectFacultyService implements RedirectFacultyServiceInterface
         } else {
             $facultyData = Faculty::all();
             return $facultyData;
-
         }
     }
 }

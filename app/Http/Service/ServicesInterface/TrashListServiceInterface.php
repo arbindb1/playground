@@ -1,6 +1,8 @@
 <?php
+
 namespace App\Http\Service\ServicesInterface;
 
-interface TrashListServiceInterface{
-public function getTrash();
+interface TrashListServiceInterface
+{
+    public function getTrash();
 }

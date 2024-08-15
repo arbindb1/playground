@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Providers;
+
 use App\Http\Service\FacultyServices\AdvanceListFacultyService;
 use App\Http\Service\FacultyServices\DeleteFacultyService;
 use App\Http\Service\FacultyServices\RedirectFacultyService;
@@ -18,18 +19,15 @@ class FacultyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(ListFacultyServiceInterface::class,AdvanceListFacultyService::class);
-        $this->app->bind(RedirectFacultyServiceInterface::class,RedirectFacultyService::class);
-        $this->app->bind(StoreFacultyServiceInterface::class,StoreFacultyService::class);
-        $this->app->bind(DeleteFacultyServiceInterface::class,DeleteFacultyService::class);
+        $this->app->bind(ListFacultyServiceInterface::class, AdvanceListFacultyService::class);
+        $this->app->bind(RedirectFacultyServiceInterface::class, RedirectFacultyService::class);
+        $this->app->bind(StoreFacultyServiceInterface::class, StoreFacultyService::class);
+        $this->app->bind(DeleteFacultyServiceInterface::class, DeleteFacultyService::class);
     }
 
 
     /**
      * Bootstrap services.
      */
-    public function boot(): void
-    {
-
-    }
+    public function boot(): void {}
 }

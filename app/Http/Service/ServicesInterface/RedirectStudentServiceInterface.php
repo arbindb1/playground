@@ -1,6 +1,8 @@
 <?php
+
 namespace App\Http\Service\ServicesInterface;
 
-interface RedirectStudentServiceInterface{
-public function getStudentList();
+interface RedirectStudentServiceInterface
+{
+    public function getStudentList();
 }

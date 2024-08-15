@@ -1,6 +1,8 @@
 <?php
+
 namespace App\Http\Service\ServicesInterface;
 
-interface TrashDeleteServiceInterface{
-    public function deleteTrash($id,$type);
+interface TrashDeleteServiceInterface
+{
+    public function deleteTrash($id, $type);
 }
