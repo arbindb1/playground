@@ -22919,3 +22919,21 @@ Stack trace:
 #5 C:\\Users\\Arbin\\Desktop\\projectiii\\artisan(13): Illuminate\\Foundation\\Application->handleCommand()
 #6 {main}
 "}
+[2024-08-16 03:36:40] local.ERROR: There are no commands defined in the "ide-helper" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"ide-helper\" namespace. at C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\symfony\\console\\Application.php:636)
+[stacktrace]
+#0 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\symfony\\console\\Application.php(685): Symfony\\Component\\Console\\Application->findNamespace()
+#1 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\symfony\\console\\Application.php(258): Symfony\\Component\\Console\\Application->find()
+#2 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#3 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#4 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1203): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 C:\\Users\\Arbin\\Desktop\\projectiii\\artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#6 {main}
+"} 
+rbin\\Desktop\\projectiii\\vendor\\symfony\\console\\Application.php(1047): Illuminate\\Console\\Command->run()
+#7 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\symfony\\console\\Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand()
+#8 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\symfony\\console\\Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#9 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#10 C:\\Users\\Arbin\\Desktop\\projectiii\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(1203): Illuminate\\Foundation\\Console\\Kernel->handle()
+#11 C:\\Users\\Arbin\\Desktop\\projectiii\\artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#12 {main}
+"} 
